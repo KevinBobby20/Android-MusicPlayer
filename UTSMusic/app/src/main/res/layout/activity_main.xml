@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/uts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/test"
+        android:text="MUSIC PLAYER"
+        android:textSize="40dp"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.435" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="316dp"
+        android:layout_height="60dp"
+        android:text="Login"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@id/profileBtn"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:fontFamily="@font/btnfont"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925"
+        android:background="@drawable/btn"/>
+
+    <Button
+        android:id="@+id/profileBtn"
+        android:layout_width="316dp"
+        android:layout_height="60dp"
+        android:text="Profile"
+        android:textSize="25dp"
+        android:fontFamily="@font/btnfont"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.779"
+        android:background="@drawable/btn"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="138dp"
+        android:layout_height="180dp"
+        app:layout_constraintBottom_toTopOf="@+id/uts"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.892"
+        app:srcCompat="@drawable/ic_tresdevideo_ico_orange" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
